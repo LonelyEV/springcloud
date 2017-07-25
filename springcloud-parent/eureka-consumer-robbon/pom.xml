@@ -9,12 +9,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.springcloud</groupId>
-	<artifactId>eureka-client</artifactId>
+	<artifactId>eureka-consumer-ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka-client</name>
+	<name>eureka-consumer-ribbon</name>
 	<packaging>jar</packaging>
-
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,6 +24,10 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,5 +54,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

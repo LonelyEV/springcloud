@@ -9,11 +9,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.springcloud</groupId>
-	<artifactId>eureka-client</artifactId>
+	<artifactId>consumer-feign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka-client</name>
+	<name>consumer-feign</name>
 	<packaging>jar</packaging>
-
 
 
 	<properties>
@@ -25,13 +24,22 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -52,5 +60,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
