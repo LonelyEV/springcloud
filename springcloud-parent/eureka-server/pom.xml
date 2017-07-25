@@ -8,19 +8,17 @@
 		<artifactId>springcloud-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
-
 	<groupId>com.springcloud</groupId>
-	<artifactId>springcloud-eureka</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcloud-eureka</name>
+	<name>eureka-server</name>
 	<packaging>jar</packaging>
-
+	
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
-		<spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -44,7 +42,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
+				 <version>Dalston.SR1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
