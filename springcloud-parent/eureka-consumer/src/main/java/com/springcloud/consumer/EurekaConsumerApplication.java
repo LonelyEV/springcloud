@@ -1,8 +1,8 @@
 /**
  * Project Name:eureka-consumer
  * File Name:EurekaConsumerApplication.java
- * Package Name:com.springcloud.eureka.consumer
- * Date:2017年7月25日下午9:04:03
+ * Package Name:com.springcloud.consumer
+ * Date:2017年7月26日下午10:20:32
  * author 屈志刚  email:598700560
  *
 */
@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
  * ClassName:EurekaConsumerApplication <br/>
  * Function: TODO ADD FUNCTION. <br/>
  * Reason:	 TODO ADD REASON. <br/>
- * Date:     2017年7月25日 下午9:04:03 <br/>
+ * Date:     2017年7月26日 下午10:20:32 <br/>
  * @author   屈志刚
  * @version  
  * @since    JDK 1.7
@@ -30,7 +30,7 @@ import org.springframework.web.client.RestTemplate;
 public class EurekaConsumerApplication {
 	
 	@Bean
-	public RestTemplate getRestTemplate(){
+	public RestTemplate initIestTemplate(){
 		return new RestTemplate();
 	}
 	
