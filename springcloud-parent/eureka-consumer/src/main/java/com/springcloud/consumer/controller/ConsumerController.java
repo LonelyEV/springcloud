@@ -41,7 +41,7 @@ public class ConsumerController {
 	public String consumer(){
 		
         ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
-        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/testClient";
+        String url = "http://user:password@" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/testClient";
         System.out.println(url);
         return restTemplate.getForObject(url, String.class);
 	}
