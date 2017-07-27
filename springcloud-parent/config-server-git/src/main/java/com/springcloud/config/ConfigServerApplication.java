@@ -17,7 +17,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * ClassName:ConfigServerApplication <br/>
  * Function: TODO ADD FUNCTION. <br/>
  * Reason:	 TODO ADD REASON. <br/>
- * Date:     2017年7月26日 下午11:34:21 <br/>
+ * Date:     2017年7月26日 下午11:34:21 <br/>e
  * @author   屈志刚
  * @version  
  * @since    JDK 1.7

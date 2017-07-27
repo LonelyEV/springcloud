@@ -29,7 +29,7 @@ public class FeignController {
 	@Autowired
 	private ClientService clientService;
 	
-	@GetMapping("feignConsumer")
+	@GetMapping("consumer")
 	public String consumer(){
 		
 		return clientService.testClient();

@@ -8,17 +8,17 @@
 		<artifactId>springcloud-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.springcloud.config</groupId>
-	<artifactId>config-server-git</artifactId>
+	<groupId>com.springcloud</groupId>
+	<artifactId>config-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>config-server-git</name>
+	<name>config-client</name>
 	<packaging>jar</packaging>
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -27,8 +27,12 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
@@ -42,13 +46,4 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 </project>
