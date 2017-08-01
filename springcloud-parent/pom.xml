@@ -30,5 +30,6 @@
 		<module>config-server-git</module>
     <module>eureka-consumer-feign</module>
     <module>config-client</module>
+    <module>ribbon-hystrix</module>
   </modules>
 </project>
